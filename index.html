@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script src="./app.js" async></script>
+    <!-- <script src="assets/scripts/app.js"></script> -->
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <div class="modal " id="add-modal">
+      <div class="modal__content">
+        <label for="title">Movie Title</label>
+        <input type="text" name="title" id="title"  />
+        <label for="image-url">Image URL</label>
+        <input type="text" name="image-url" id="image-url" />
+        <label for="rating">Your Rating</label>
+        <input
+          type="number"
+          step="1"
+          max="5"
+          min="1"
+          name="rating"
+          id="rating"
+        />
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Add</button>
+      </div>
+    </div>
+
+    <header>
+      <h1>Favorite Movies</h1>
+      <button id="add-movie">ADD MOVIE</button>
+    </header>
+
+    <main>
+      <section id="entry-text" class="card">
+        <p>Your personal movie database!</p>
+      </section>
+      <ul id="movie-list" >
+        <!-- <li class='movie-element'>
+          <div>
+            <p>Title of movie</p>
+            <img/>
+            <p>Rating</p>
+          </div>
+        </li> -->
+      </ul>
+    </main>
+  </body>
+</html>
